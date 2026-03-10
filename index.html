@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Fairy Memory Museum</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="sparkles"></div>
+
+<div id="lockScreen">
+<h1>✨ Fairy Memory Museum ✨</h1>
+<p>Enter the magic passcode</p>
+
+<input type="password" id="passcode">
+<button onclick="unlock()">Enter</button>
+
+<p id="error"></p>
+</div>
+
+<div id="museum" class="hidden">
+
+<audio autoplay loop>
+<source src="assets/music/song.mp3" type="audio/mp3">
+</audio>
+
+<h1 class="title">Lavender Fairy Museum</h1>
+
+<div class="gallery">
+
+<img src="assets/photos/photo1.jpg">
+<img src="assets/photos/photo2.jpg">
+<img src="assets/photos/photo3.jpg">
+
+</div>
+
+</div>
+
+<div id="butterflies"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
