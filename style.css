@@ -1,0 +1,145 @@
+body{
+margin:0;
+font-family:'Libre Baskerville',serif;
+background:#2e2147;
+color:white;
+text-align:center;
+}
+
+/* DUNGEON */
+
+#dungeon{
+height:100vh;
+background:url("dungeon.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.passwordBox{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:10px;
+}
+
+.passwordBox input{
+padding:10px;
+margin-top:10px;
+border:none;
+border-radius:5px;
+}
+
+.passwordBox button{
+padding:10px 20px;
+margin-top:10px;
+background:#b78cff;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* MUSEUM */
+
+#museum{
+background:url("museum.jpg") center/cover no-repeat;
+min-height:100vh;
+padding-bottom:120px;
+}
+
+.title{
+font-family:'Cinzel',serif;
+font-size:42px;
+padding:50px 0;
+}
+
+/* GALLERY ITEMS */
+
+.galleryItem{
+margin:120px auto;
+max-width:320px;
+position:relative;
+opacity:0;
+transform:translateY(80px);
+transition:1.5s;
+}
+
+.galleryItem.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* GOLD FRAME */
+
+.frame{
+width:260px;
+border:12px solid #d4af37;
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* SPOTLIGHT */
+
+.spotlight{
+position:absolute;
+width:220px;
+height:220px;
+background:radial-gradient(circle,rgba(255,255,200,0.6),transparent);
+top:-100px;
+left:50%;
+transform:translateX(-50%);
+filter:blur(20px);
+}
+
+/* MUSEUM LABEL */
+
+.label{
+background:rgba(255,255,255,0.9);
+color:#2e2147;
+padding:16px;
+margin-top:20px;
+font-size:14px;
+line-height:1.6;
+border-radius:4px;
+}
+
+/* POEM PLAQUE */
+
+#plaque{
+margin:150px auto;
+background:#efe4c9;
+color:#2e2147;
+padding:40px;
+max-width:520px;
+box-shadow:0 25px 50px rgba(0,0,0,0.6);
+font-family:'Cinzel',serif;
+}
+
+.poem{
+text-align:left;
+line-height:1.8;
+font-size:18px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:700px){
+
+.frame{
+width:80%;
+}
+
+.galleryItem{
+max-width:90%;
+}
+
+.title{
+font-size:30px;
+}
+
+}
+
+/* HIDDEN */
+
+.hidden{
+display:none;
+}
