@@ -1,0 +1,107 @@
+body{
+margin:0;
+font-family:Georgia;
+background:#2b0d0d;
+color:white;
+text-align:center;
+}
+
+/* DUNGEON SCREEN */
+
+#lockScreen{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:radial-gradient(circle,#4b1a1a,#1b0606);
+}
+
+.dungeonTitle{
+font-size:40px;
+margin-bottom:20px;
+}
+
+input{
+padding:12px;
+border-radius:8px;
+border:none;
+margin:10px;
+}
+
+button{
+padding:12px 20px;
+border:none;
+background:#7a1f1f;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#a02c2c;
+}
+
+.hidden{
+display:none;
+}
+
+/* MUSEUM */
+
+#museum{
+min-height:100vh;
+background:#5a0f0f;
+padding-bottom:50px;
+}
+
+.museumTitle{
+padding:40px;
+font-size:38px;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+padding:20px;
+}
+
+.gallery img{
+width:260px;
+height:340px;
+object-fit:cover;
+border:10px solid #d6b27a;
+background:#111;
+box-shadow:0 0 25px rgba(0,0,0,0.7);
+}
+
+/* SPARKLES */
+
+#sparkles span{
+position:fixed;
+width:5px;
+height:5px;
+background:white;
+border-radius:50%;
+animation:twinkle 3s infinite;
+}
+
+@keyframes twinkle{
+0%{opacity:0}
+50%{opacity:1}
+100%{opacity:0}
+}
+
+/* BUTTERFLIES */
+
+.butterfly{
+position:fixed;
+width:60px;
+animation:fly 18s linear infinite;
+}
+
+@keyframes fly{
+0%{transform:translateY(100vh)}
+100%{transform:translateY(-10vh)}
+}
