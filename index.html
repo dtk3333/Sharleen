@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>The Secret Fairy Museum</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- DUNGEON -->
+
+<div id="dungeon">
+
+<div class="popup">
+
+<h2>The Hidden Dungeon</h2>
+<p>Enter the password to unlock the secret museum</p>
+
+<input type="password" id="passcode" placeholder="Password">
+<button onclick="unlock()">Enter</button>
+
+<p id="error"></p>
+
+</div>
+
+</div>
+
+
+<!-- MUSEUM -->
+
+<div id="museum" class="hidden">
+
+<audio id="music" loop>
+<source src="song.mp3" type="audio/mp3">
+</audio>
+
+<h1 class="title">The Lavender Fairy Museum</h1>
+
+<div class="gallery">
+
+<div class="photoRow left hidden" id="p1">
+
+<div class="spotlight"></div>
+
+<div class="frame">
+<img src="photo1.jpg">
+</div>
+
+<div class="description">
+<p>
+A soul full of warmth and wonder.  
+Time with Sharleen always feels special, like stepping into a small magical moment that makes everything brighter.
+</p>
+</div>
+
+</div>
+
+
+<div class="photoRow right hidden" id="p2">
+
+<div class="description">
+<p>
+Her kindness and curiosity make the world feel softer and more beautiful.  
+Even in simple moments, she reminds everyone around her how lovely life can be.
+</p>
+</div>
+
+<div class="spotlight"></div>
+
+<div class="frame">
+<img src="photo2.jpg">
+</div>
+
+</div>
+
+
+<div class="photoRow left hidden" id="p3">
+
+<div class="spotlight"></div>
+
+<div class="frame">
+<img src="photo3.jpg">
+</div>
+
+<div class="description">
+<p>
+There is something quietly magical about her presence.  
+She carries laughter, warmth, and a little bit of fairy dust wherever she goes.
+</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- POEM -->
+
+<div class="poem">
+
+<h3>The Essence of Sharleen</h3>
+
+<p>
+<strong>S</strong>hining gently with kindness<br>
+<strong>H</strong>earts feel lighter around her<br>
+<strong>A</strong> little spark of wonder in every smile<br>
+<strong>R</strong>adiating warmth wherever she goes<br>
+<strong>L</strong>aughter follows her like soft music<br>
+<strong>E</strong>very moment with her feels magical<br>
+<strong>E</strong>very memory becomes brighter<br>
+<strong>N</strong>ever forgetting to spread joy
+</p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
